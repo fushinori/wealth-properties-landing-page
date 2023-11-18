@@ -1,4 +1,15 @@
-.buttons {
+.container {
   display: flex;
   gap: 2rem;
+}
+
+.button {
+  text-transform: uppercase;
+  color: var(--clr-primary-400);
+  background-color: var(--clr-neutral);
+  border: 1px solid var(--clr-primary-400);
+  border-radius: 5px;
+  padding-inline: 2rem;
+  padding-block: 0.8rem;
+  cursor: pointer;
 }
