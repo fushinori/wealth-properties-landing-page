@@ -1,0 +1,18 @@
+.navbar {
+  list-style-type: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.link {
+  color: var(--clr-primary-400);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+}
+
+/* When current link is active */
+.active {
+  font-weight: 700;
+  border-bottom: 2px solid var(--clr-primary-400);
+}
