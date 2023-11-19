@@ -1,0 +1,128 @@
+.maxWidth {
+  max-width: 80rem;
+  margin: auto;
+}
+
+.blackBg {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral);
+}
+
+.mainHeading {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 6rem;
+  text-transform: uppercase;
+}
+
+.hero {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  grid-column: span 5;
+}
+
+.heroIllustration {
+  grid-column: 6 / -1;
+  position: relative;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.cta {
+  text-transform: uppercase;
+  color: var(--clr-neutral);
+  background-image: var(--primary-gradient);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  width: 13rem;
+}
+
+.woman {
+  position: absolute;
+  top: 97px;
+}
+
+.building {
+  position: absolute;
+  top: -185px;
+  z-index: -1;
+}
+
+.gradient {
+  position: absolute;
+  height: 510px;
+  width: 510px;
+  border-radius: 50%;
+  filter: blur(400px);
+  opacity: 0.56;
+
+  /* Make gradient not clickable */
+  pointer-events: none;
+}
+
+.gradientTop {
+  background-color: hsla(280, 78%, 69%, 0.7);
+  top: -255px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gradientLeft {
+  background-color: hsla(191, 86%, 49%, 0.7);
+  top: 500px;
+  left: -255px;
+}
+
+.gradientRight {
+  background-color: hsla(356, 90%, 64%, 0.7);
+  top: 280px;
+  right: -255px;
+}
+.textBlock {
+  max-width: 67.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.secondHeading {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.servicesHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  max-width: 67.5rem;
+  margin: auto;
+  padding-inline: 10rem;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.divider {
+  border-bottom: 1px solid hsla(0, 0%, 38%, 1);
+}
