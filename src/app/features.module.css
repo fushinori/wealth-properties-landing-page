@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 4.5rem;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.paragraphContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.purpleContainer {
+  grid-column: 1 / -1;
+  background-color: hsla(280, 78%, 69%, 1);
+  padding: 1rem 1.5rem;
+}
