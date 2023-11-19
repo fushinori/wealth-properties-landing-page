@@ -56,7 +56,12 @@ h6 {
 
 :root {
   --clr-primary-400: hsla(0, 0%, 18%, 1);
-  --clr-neutral: hsl(0, 0, 100)
+  --clr-neutral: hsl(0, 0%, 100%);
 
-  --primary-gradient: linear-gradient(to right, hsla(191, 86%, 49%, 1), hsla(280, 78%, 69%, 1), hsla(356, 90%, 64%, 1));
+  --primary-gradient: linear-gradient(
+    to right,
+    hsla(191, 86%, 49%, 1),
+    hsla(280, 78%, 69%, 1),
+    hsla(356, 90%, 64%, 1)
+  );
 }
