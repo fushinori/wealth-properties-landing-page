@@ -1,16 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { LinkObject } from "@/app/types";
 import { usePathname } from "next/navigation";
 import styles from "./NavBar.module.css";
 
 interface Props {
   links: LinkObject[];
-}
-
-export interface LinkObject {
-  name: string;
-  href: string;
 }
 
 export default function NavBar({ links }: Props) {

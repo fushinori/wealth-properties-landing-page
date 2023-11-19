@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
-import NavBar, { LinkObject } from "./NavBar";
+import NavBar from "./NavBar";
+import { LinkObject } from "@/app/types";
 
 import logo from "../../../../public/wealth-properties-logo.svg";
 import styles from "./Header.module.css";
 import Buttons from "./Buttons";
 
-const links: LinkObject[] = [
+export const headerLinks: LinkObject[] = [
   { name: "Home", href: "/" },
   { name: "Profile", href: "/profile" },
   { name: "Reports", href: "/reports" },
@@ -16,8 +18,10 @@ const links: LinkObject[] = [
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Image src={logo} alt="Wealth Properties" />
-      <NavBar links={links} />
+      <Link href="/">
+        <Image src={logo} alt="Wealth Properties" />
+      </Link>
+      <NavBar links={headerLinks} />
       <Buttons />
     </header>
   );

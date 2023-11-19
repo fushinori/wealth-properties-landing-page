@@ -11,6 +11,10 @@
   padding-bottom: 0.25rem;
 }
 
+.link:hover {
+  border-bottom: 2px solid var(--clr-primary-400);
+}
+
 /* When current link is active */
 .active {
   font-weight: 700;

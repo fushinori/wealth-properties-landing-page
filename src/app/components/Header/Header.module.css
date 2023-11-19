@@ -1,7 +1,8 @@
 .header {
-  padding-inline: 6.25rem;
-  padding-block: 1.875rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 80rem;
+  margin: auto;
+  margin-top: 2rem;
 }

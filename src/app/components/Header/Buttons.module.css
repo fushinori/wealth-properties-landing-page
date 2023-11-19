@@ -13,3 +13,8 @@
   padding-block: 0.8rem;
   cursor: pointer;
 }
+
+.button:hover {
+  color: var(--clr-neutral);
+  background-color: var(--clr-primary-400);
+}
