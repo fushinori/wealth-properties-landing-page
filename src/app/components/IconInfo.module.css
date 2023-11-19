@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.text {
+  font-size: 1.25rem;
+}
