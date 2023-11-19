@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.button {
+  position: relative;
+  max-width: 12.5rem;
+  text-transform: uppercase;
+  color: var(--clr-primary-400);
+  background: var(--clr-neutral);
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--primary-gradient);
+  margin: -1px;
+}
